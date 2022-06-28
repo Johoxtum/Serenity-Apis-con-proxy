@@ -17,8 +17,8 @@ public class Hook {
 
         OnStage.setTheStage(new OnlineCast());
         theActorCalled("Datacredito");
-        String theRestApiBaseUrl = environmentVariables.optionalProperty("environments.seg.base.url")
-                .orElse("environments.qa.base.url");
+        String theRestApiBaseUrl = environmentVariables.optionalProperty("environments.dev.base.url")
+                .orElse("environments.seg.base.url");
         theActorInTheSpotlight().whoCan(CallAnApi.at(theRestApiBaseUrl));
     }
 }

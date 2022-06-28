@@ -6,7 +6,7 @@ import adquirencia.utils.Constant.Endpoints;
 
 
 public enum WebServiceEndPoints {
-    URI(Endpoints.URL_KEY);
+    URI(Endpoints.URL_AGREGACION);
 
 
 

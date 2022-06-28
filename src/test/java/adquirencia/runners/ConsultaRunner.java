@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@Getkey",
+        tags = "@Getcities",
         features = "src/test/resources/features/consultas.feature",
         glue = {"adquirencia.stepdefinitions.hook",
                 "adquirencia.stepdefinitions"

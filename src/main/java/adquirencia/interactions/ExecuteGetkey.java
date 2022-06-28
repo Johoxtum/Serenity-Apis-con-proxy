@@ -28,13 +28,14 @@ public class ExecuteGetkey implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         SerenityRest.reset();
+        RestAssured.proxy("piscis01.bancodebogota.net", 8003);
 
         actor.attemptsTo(
                 Get.resource(resource)
                         .with(request -> request.
                                 params(TestData.getData())
                                 .relaxedHTTPSValidation()
-                                .headers("X-RqUID","bc8876e9-d61b-4504-be31-7f99f91217e9")
+                                .headers("X-RqUID","bc8876e9-d61b-4504-be31-7f99f91217e8")
                                 .headers("X-Channel","Oficina")
                                 .headers("X-CompanyId","001")
                                 .headers("X-CustIdentType","CC")

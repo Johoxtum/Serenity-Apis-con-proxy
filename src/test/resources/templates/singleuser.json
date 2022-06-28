@@ -1,0 +1,12 @@
+{
+  "dataSources": [
+    "IntCreditBureau",
+    "ExtCreditBureau"
+  ],
+  "dataSourcesPayload": [
+    {
+      "key": "ExtCreditBureau",
+      "value": "{\"lastName\":\"Garcia\",\"officeId\":\"9281\"}"
+    }
+  ]
+}
